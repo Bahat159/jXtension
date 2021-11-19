@@ -1,0 +1,19 @@
+{
+  "name": "Jxtension",
+  "description": "An Extension that does what it author wants!",
+  "version": "0.1",
+  "manifest_version": 3,
+  "chrome_url_overrides": {
+        "newtab": "newtab.html"
+    },
+	"background": {
+		"service_worker": "./background.js"
+	},
+    "permissions": [
+        "activeTab","cookies","desktopCapture"
+    ],
+	"host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "./newtab.html"
+  }
+}
